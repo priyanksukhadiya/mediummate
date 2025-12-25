@@ -1,0 +1,136 @@
+/* Customizer Controls Styling */
+
+.customize-control-toggle .toggle-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.customize-control-toggle .toggle-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.customize-control-toggle .toggle-label {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.customize-control-toggle .toggle-label:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+.customize-control-toggle input:checked + .toggle-label {
+    background-color: #03a87c;
+}
+
+.customize-control-toggle input:focus + .toggle-label {
+    box-shadow: 0 0 1px #03a87c;
+}
+
+.customize-control-toggle input:checked + .toggle-label:before {
+    transform: translateX(26px);
+}
+
+/* Range Control Styling */
+.customize-control-range .range-slider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customize-control-range input[type="range"] {
+    flex: 1;
+    height: 5px;
+    border-radius: 5px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+}
+
+.customize-control-range input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #03a87c;
+    cursor: pointer;
+}
+
+.customize-control-range input[type="range"]::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #03a87c;
+    cursor: pointer;
+}
+
+.customize-control-range .range-value {
+    min-width: 40px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #f1f1f1;
+    border-radius: 3px;
+}
+
+/* Multiple Select Control */
+.customize-control-multiple_select select {
+    min-height: 120px;
+}
+
+/* Panel and Section Styling */
+.customize-panel-mediummate_homepage_panel .panel-title,
+.customize-panel-mediummate_styling_panel .panel-title {
+    font-weight: 600;
+}
+
+.customize-section .section-description {
+    font-style: italic;
+    margin-bottom: 15px;
+    color: #666;
+}
+
+/* Social Links Control */
+.customize-control .social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+}
+
+.customize-control .social-links li a {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 32px;
+    background: #f1f1f1;
+    border-radius: 50%;
+    color: #666;
+    text-decoration: none;
+}
+
+.customize-control .social-links li a:hover {
+    background: #03a87c;
+    color: #fff;
+}
