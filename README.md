@@ -1,4 +1,4 @@
-# mediummate WordPress Theme
+# MediumMate WordPress Theme
 
 MediumMate is a clean, elegant and modern WordPress theme inspired by Medium's design aesthetics. Perfect for personal blogs, magazines, and professional publishing platforms.
 
